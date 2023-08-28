@@ -1,0 +1,47 @@
+import datetime
+
+class ToDoItem:
+    def __init__(self, task, due_date, is_important):
+        self.task = task
+        self.due_date = due_date
+        self.is_important = is_important
+
+def print_to_do_list(to_do_list):
+    for to_do_item in to_do_list:
+        print(to_do_item.task)
+        if to_do_item.is_important:
+            print("(wichtig)")
+
+def add_to_do_item(to_do_list, task, due_date, is_important):
+    to_do_item = ToDoItem(task, due_date, is_important)
+    to_do_list.append(to_do_item)
+
+def main():
+    to_do_list = []
+
+    # Wichtige Aufgabe hinzufügen
+    add_to_do_item(to_do_list, "Einkaufen gehen", datetime.date(2023, 8, 29), True)
+
+    # Unwichtige Aufgabe hinzufügen
+    add_to_do_item(to_do_list, "Hausaufgaben machen", datetime.date(2023, 8, 30), False)
+
+    # Liste ausgeben
+    print_to_do_list(to_do_list)
+
+    # Neue Aufgabe hinzufügen
+    task = input("Neue Aufgabe: ")
+    due_date = input("Fälligkeitsdatum (YYYY-MM-DD): ")
+    is_important = input("Wichtig (j/n): ")
+
+    if is_important == "j":
+        is_important = True
+    else:
+        is_important = False
+
+    add_to_do_item(to_do_list, task, due_date, is_important)
+
+    # Liste erneut ausgeben
+    print_to_do_list(to_do_list)
+
+if __name__ == "__main__":
+    main()
