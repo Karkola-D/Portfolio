@@ -29,4 +29,5 @@ F1 = 1 ~ n == 1
 F2 = 2 ~ n == 2
 Fn = Fn -1 + Fn -2  n>2 ~ (result[-1] + result[-2])
 
+
 """
