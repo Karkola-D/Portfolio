@@ -25,9 +25,11 @@ def fibonacci(n):
 print(fibonacci(10))
 
 """
-Die Fibonacci-Zahlen  
+Die Fibonacci-Zahlen 
+the Fibounacci numbers 
 
 Die Fibonacci-Zahlen sind folgendemaßen rekrusiv definert 
+The Fibonacci numbers are recursively defined as follows
 F1 = 1 ~ n == 1
 F2 = 2 ~ n == 2
 Fn = Fn -1 + Fn -2  n>2 ~ (result[-1] + result[-2])
