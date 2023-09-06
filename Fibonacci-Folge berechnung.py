@@ -1,12 +1,15 @@
 def fibonacci(n):
   """
   Berechnet die Fibonacci-Folge bis zu n.
+  Calculates the Fibonacci sequence up to n
 
   Args:
     n: Die Anzahl der Fibonacci-Zahlen.
+    n: The number of Fibonacci numbers.
 
   Returns:
     Eine Liste mit den Fibonacci-Zahlen.
+    A list of Fibonacci numbers.
   """
   if n == 0:
     return []
