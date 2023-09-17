@@ -22,7 +22,7 @@ def fibonacci(n):
     result.append(result[-1] + result[-2])
     return result
 
-print(fibonacci(10))
+print(fibonacci(15))
 
 """
 Die Fibonacci-Zahlen 
