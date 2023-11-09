@@ -15,6 +15,9 @@ def martingale(initial_bet, rounds):
     Eine Liste der Gewinne oder Verluste
     A list of wins and losses 
   """
+  startWertBank = 1000
+  bankkonto = startWertBank
+  
   wins = []
   losses = []
   bet = initial_bet
@@ -29,7 +32,7 @@ def martingale(initial_bet, rounds):
   return wins, losses
 
 if __name__ == "__main__":
-  wins, losses = martingale(10, 10)
+  wins, losses = martingale(2, 10)
   print(f"Gewinne: {wins}")
   print(f"Verluste: {losses}")
   print(f"Anzahl der Wins: {len(wins)}")
