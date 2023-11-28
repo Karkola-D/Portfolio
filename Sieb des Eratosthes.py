@@ -12,7 +12,7 @@ def sieve_of_eratosthenes(n):
   """  
   Die Funktion erstellt eine Liste mit allen Zahlen von 2 bis n:
   
-  Bis zur einer endliche zahlen
+  Bis zur einer endlichen zahlen
   """
   primes = []
   is_prime = [True] * (n + 1)
@@ -41,7 +41,7 @@ def sieve_of_eratosthenes(n):
     p += 1
     
   """  
-  Die Funktion fügt alle Zahlen in der Liste is_prime, die nicht markiert wurden, in die Liste primes ein:
+  Die Funktion fügt alle Zahlen in der Liste is_prime, die nicht markiert wurden in die Liste primes ein:
   """
 
   # Add all unmarked numbers to the list of primes.
