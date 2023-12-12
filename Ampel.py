@@ -31,7 +31,7 @@ def main():
     lampe.schalte_an()
 
     # 10 Sekunden warten
-    time.sleep(10)
+    time.sleep(5)
 
     # Lampe ausschalten
     lampe.schalte_aus()
