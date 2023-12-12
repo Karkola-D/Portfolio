@@ -1,0 +1,11 @@
+IPv4 & IPv6 
+
+
+
+IPv4 ist ein Internetprotokoll, das verwendet wird, um Geräte miteinander zu verbinden. 
+IPv4-Adressen sind 32 Bit lang und bestehen aus 4 Oktale. Die Werte der Dezimalzahlen können von 0 bis 255 liegen.
+IPv4-Adresse bestehen aus einen Netzanteil und einen Hostanteil 
+
+Nachteil von IPv4
+Es stehen nur etwa 4 Milliarden IPv4-Adressen zur Verfügung. 
+IPv4 ist nicht sehr sicher.
