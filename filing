@@ -1,6 +1,8 @@
 IPv4 & IPv6 
 
-
+Localhost
+127.0.01
+::1
 
 IPv4 ist ein Internetprotokoll, das verwendet wird, um Geräte miteinander zu verbinden. 
 IPv4-Adressen sind 32-Bit lang und bestehen aus 4 Oktale. Die Werte der Dezimalzahlen können von 0 bis 255 liegen.
@@ -13,7 +15,7 @@ IPv4 ist nicht sehr sicher.
 IPv6 ist der Nachfolger vom IPv6 
 IPv6-Adressen sind 128-Bit mit 8 Oktale. 
   bsp.2a02:0db8:0b01:08d3:0215:5dff:0370:0a02
-      2a02:db8:b01:8d3:215:5dff:370:a02
+     - 2a02:db8:b01:8d3:215:5dff:370:a02
 
 Vorteile & Nachteile von IPv6
 
