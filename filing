@@ -1,5 +1,7 @@
 IPv4 & IPv6 
 
+SCHICHT 3: NETWORK LAYER (VERMITTLUNGSSCHICHT)
+
 Localhost
 127.0.01
 ::1
@@ -20,6 +22,7 @@ IPv6-Adressen sind 128-Bit mit 8 Oktale.
 Vorteile & Nachteile von IPv6
 Keine Adressknappheit mehr 
 Mehr Sicherheit 
+Paralleler Betrieb von IPv4 und IPv6 möglich
 
 Was ist der Unterschied zwischen Hub, Switch und Router?
 https://community.fs.com/de/article/whats-the-difference-hub-vs-switch-vs-router.html
