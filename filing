@@ -25,9 +25,20 @@ Mehr Sicherheit
 Paralleler Betrieb von IPv4 und IPv6 möglich
 
 Was ist der Unterschied zwischen Hub, Switch und Router?
-l
 
-Hub
+Hubs, Switches und Router sind alle Netzwerkgeräte, die zur Verbindung von Computern und anderen Netzwerkgeräten miteinander verwendet werden. Sie unterscheiden sich jedoch in ihrer Funktionsweise und ihre Anwendung
+
+Hubs
+
+Hubs sind die einfachsten Netzwerkgeräte. Sie arbeiten auf der physikalischen Schicht des OSI-Referenzmodells und leiten alle Datenpakete, die an sie gesendet werden, an alle angeschlossenen Geräte weiter.
+
+Switches
+
+Switches arbeiten ebenfalls auf der physikalischen Schicht, aber sie sind intelligenter als Hubs. Sie lesen die Zieladresse der Datenpakete und leiten diese nur an die Geräte weiter, an die sie adressiert sind.
+
+Router
+
+Router arbeiten auf der Vermittlungsschicht des OSI-Referenzmodells. Sie sind in der Lage, Datenpakete zwischen verschiedenen Netzwerken zu routen. Dies ermöglicht es, Computer in verschiedenen Netzwerken miteinander zu verbinden, z. B. im lokalen Netzwerk und wie dem Internet.
 
 https://community.fs.com/de/article/whats-the-difference-hub-vs-switch-vs-router.html
 https://www.dr-datenschutz.de/hub-switch-router-funktionieren-netzwerke/
