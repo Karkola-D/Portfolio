@@ -37,6 +37,8 @@ if __name__ == "__main__":
   print(f"Verluste: {losses}")
   print(f"Anzahl der Wins: {len(wins)}")
   print(f"Anzahl der Verluste: {len(losses)}")
-  
-  
-  
+
+
+""" Erweiterungsideen:
+ Stop-Loss Funktion 
+"""
