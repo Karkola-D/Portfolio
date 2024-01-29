@@ -58,3 +58,30 @@ https://de.m.wikipedia.org/wiki/OSI-Modell
 TCP/UDP
 
 TCP/UDP sind zwei Protokolle, die in der Netzwerkkommunikation verwendet werden. Sie sind Teil der TCP/IP-Protokollsuite, die die Grundlage für das Internet und andere Netzwerke bildet.
+
+TCP (Transmission Control Protocol) ist ein verbindungsorientiertes Protokoll. Das bedeutet, dass vor der Datenübertragung eine Verbindung zwischen dem Sender und Empfänger aufgebaut wird. Diese Verbindung wird während der gesamten Datenübertragung aufrechterhalten. TCP bietet eine Reihe von Garantien für die Zuverlässigkeit der Datenübertragung, z. B.:
+
+
+Vorteile
+
+Zuverlässige Datenübertragung: TCP bietet eine Reihe von Garantien für die Zuverlässigkeit der Datenübertragung, z. B. Empfangsbestätigung, Fehlerkorrektur und Datenwiederherstellung.
+Sichere Datenübertragung: TCP kann mit einer Reihe von Sicherheitsmechanismen verwendet werden, z. B. Authentifizierung und Verschlüsselung.
+
+Nachteile
+
+Langsamere Datenübertragung: TCP ist in der Regel langsamer als UDP, da es zusätzliche Informationen für die Zuverlässigkeitsgarantien übertragen muss.
+Komplexere Implementierung: TCP ist komplexer zu implementieren als UDP, da es eine Reihe von Mechanismen für die Zuverlässigkeit und Sicherheit implementieren muss.
+
+
+UDP (User Datagram Protocol) ist ein verbindungsloses Protokoll. Das bedeutet, dass vor der Datenübertragung keine Verbindung zwischen dem Sender und Empfänger aufgebaut wird. UDP bietet keine Garantien für die Zuverlässigkeit der Datenübertragung. Nachrichten können verloren gehen, beschädigt werden oder in der falschen Reihenfolge ankommen.
+
+
+Vorteile
+
+Schnellere Datenübertragung: UDP ist in der Regel schneller als TCP, da es keine zusätzlichen Informationen für die Zuverlässigkeitsgarantien übertragen muss.
+Einfachere Implementierung: UDP ist einfacher zu implementieren als TCP, da es keine zusätzlichen Mechanismen für die Zuverlässigkeit und Sicherheit implementieren muss
+
+Nachteile
+
+Unzuverlässige Datenübertragung: UDP bietet keine Garantien für die Zuverlässigkeit der Datenübertragung. Nachrichten können verloren gehen, beschädigt werden oder in der falschen Reihenfolge ankommen.
+Weniger sichere Datenübertragung: UDP kann nicht mit denselben Sicherheitsmechanismen wie TCP verwendet werden.
