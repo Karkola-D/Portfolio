@@ -1,4 +1,4 @@
-IPv4 & IPv6 
+DrIPv4 & IPv6 
 
 SCHICHT 3: NETWORK LAYER (VERMITTLUNGSSCHICHT)
 
@@ -52,3 +52,9 @@ https://community.fs.com/de/article/network-switch-vs-network-router-vs-network-
 
 
 https://de.m.wikipedia.org/wiki/OSI-Modell
+
+
+
+TCP/UDP
+
+TCP/UDP sind zwei Protokolle, die in der Netzwerkkommunikation verwendet werden. Sie sind Teil der TCP/IP-Protokollsuite, die die Grundlage für das Internet und andere Netzwerke bildet.
