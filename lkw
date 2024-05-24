@@ -1,0 +1,104 @@
+Python
+def main():
+    while True:
+        # Hauptmenü anzeigen
+        print("\nLkw-Fahrer und Firmenverwaltung")
+        print("------------------------------")
+        print("1. Fahrer anzeigen")
+        print("2. Fahrer hinzufügen")
+        print("3. Fahrer bearbeiten")
+        print("4. Fahrer löschen")
+        print("5. Firmen anzeigen")
+        print("6. Firma hinzufügen")
+        print("7. Firma bearbeiten")
+        print("8. Firma löschen")
+        print("9. Beenden")
+
+        # Benutzerauswahl abfragen
+        auswahl = input("Wähle eine Option: ")
+
+        # Auswahl auswerten und entsprechende Funktion aufrufen
+        if auswahl == "1":
+            zeige_fahrer()
+        elif auswahl == "2":
+            hinzugefuege_fahrer()
+        elif auswahl == "3":
+            bearbeite_fahrer()
+        elif auswahl == "4":
+            loesche_fahrer()
+        elif auswahl == "5":
+            zeige_firmen()
+        elif auswahl == "6":
+            hinzugefuege_firma()
+        elif auswahl == "7":
+            bearbeite_firma()
+        elif auswahl == "8":
+            loesche_firma()
+        elif auswahl == "9":
+            print("Programm wird beendet.")
+            break
+        else:
+            print("Ungültige Eingabe. Bitte versuche es erneut.")
+
+# Funktion zum Anzeigen aller Fahrer
+def zeige_fahrer():
+    with open("fahrer.txt", "r") as datei:
+        for zeile in datei:
+            fahrer_daten = zeile.strip().split(",")
+            print(f"Name: {fahrer_daten[0]}")
+            print(f"Führerscheinnumer: {fahrer_daten[1]}")
+            print(f"Firma: {fahrer_daten[2]}")
+            print("-" * 20)
+
+# Funktion zum Hinzufügen eines neuen Fahrers
+def hinzugefuege_fahrer():
+    name = input("Name des Fahrers: ")
+    fuehrerscheinnummer = input("Führerscheinnumer: ")
+    firma = input("Firma: ")
+
+    with open("fahrer.txt", "a") as datei:
+        datei.write(f"{name},{fuehrerscheinnummer},{firma}\n")
+
+    print(f"Fahrer {name} wurde erfolgreich hinzugefügt.")
+
+# Funktion zum Bearbeiten eines vorhandenen Fahrers
+def bearbeite_fahrer():
+    name = input("Name des zu bearbeitenden Fahrers: ")
+
+    # Fahrerdaten aus Datei lesen
+    fahrer_daten = lies_fahrer_daten(name)
+
+    if fahrer_daten:
+        neuer_name = input(f"Neuer Name ({fahrer_daten[0]}): ")
+        neue_fuehrerscheinnummer = input(f"Neue Führerscheinnumer ({fahrer_daten[1]}): ")
+        neue_firma = input(f"Neue Firma ({fahrer_daten[2]}): ")
+
+        # Fahrerdaten aktualisieren
+        aktualisiere_fahrer_daten(name, neuer_name, neue_fuehrerscheinnummer, neue_firma)
+
+        print(f"Fahrerdaten von {name} wurden aktualisiert.")
+    else:
+        print(f"Fahrer {name} konnte nicht gefunden werden.")
+
+# Funktion zum Löschen eines Fahrers
+def loesche_fahrer():
+    name = input("Name des zu löschenden Fahr
+Verwende den Code mit Vorsicht.
+content_copy
+
+
+
+tune
+
+share
+
+
+more_vert
+
+
+expand_content
+add_photo_alternatephoto_camera
+
+mic
+send
+Gemini zeigt möglicherweise fehlerhafte Informationen an, z. B.
