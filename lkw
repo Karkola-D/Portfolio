@@ -1,4 +1,4 @@
-Python
+
 def main():
     while True:
         # Hauptmenü anzeigen
@@ -56,8 +56,7 @@ def hinzugefuege_fahrer():
     fuehrerscheinnummer = input("Führerscheinnumer: ")
     firma = input("Firma: ")
 
-    with open("fahrer.txt", "a") as datei:
-        datei.write(f"{name},{fuehrerscheinnummer},{firma}\n")
+    
 
     print(f"Fahrer {name} wurde erfolgreich hinzugefügt.")
 
@@ -81,24 +80,7 @@ def bearbeite_fahrer():
         print(f"Fahrer {name} konnte nicht gefunden werden.")
 
 # Funktion zum Löschen eines Fahrers
-def loesche_fahrer():
-    name = input("Name des zu löschenden Fahr
-Verwende den Code mit Vorsicht.
-content_copy
 
 
 
-tune
 
-share
-
-
-more_vert
-
-
-expand_content
-add_photo_alternatephoto_camera
-
-mic
-send
-Gemini zeigt möglicherweise fehlerhafte Informationen an, z. B.
