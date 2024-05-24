@@ -62,14 +62,13 @@ def fahrer_anzeigen():
   "Zeigt alle registrierten Fahrer an."
   if not fahrer:
     print("Es sind derzeit keine Fahrer registriert.")
-    return
+    
 
-  print("-" * 30)
   print("Registrierte Fahrer:")
   for fahrer in fahrer:
     print(f"Name: {fahrer['name']}")
     print(f"Führerscheinnumer: {fahrer['führerscheinnummer']}")
-    print("-" * 30)
+     
 
 while True:
   print("nLkw-Fahrerverwaltung")
