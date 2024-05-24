@@ -2,7 +2,7 @@ Python
 def main():
     while True:
         # Hauptmenü anzeigen
-        print("\nLkw-Fahrer und Firmenverwaltung")
+        print(nLkw-Fahrer und Firmenverwaltung")
         print("-")
         print("1. Fahrer anzeigen")
         print("2. Fahrer hinzufügen")
