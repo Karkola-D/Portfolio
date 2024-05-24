@@ -38,48 +38,50 @@ def main():
             print("Programm wird beendet.")
             break
         else:
-            print("Ungültige Eingabe. Bitte versuche es erneut.")
+            print("Ungültige Eingabe. Bitte versuche es 
 
-# Funktion zum Anzeigen aller Fahrer
-def zeige_fahrer():
-    with open("fahrer.txt", "r") as datei:
-        for zeile in datei:
-            fahrer_daten = zeile.strip().split(",")
-            print(f"Name: {fahrer_daten[0]}")
-            print(f"Führerscheinnumer: {fahrer_daten[1]}")
-            print(f"Firma: {fahrer_daten[2]}")
-            print("-" * 20)
 
-# Funktion zum Hinzufügen eines neuen Fahrers
-def hinzugefuege_fahrer():
-    name = input("Name des Fahrers: ")
-    fuehrerscheinnummer = input("Führerscheinnumer: ")
-    firma = input("Firma: ")
+---------------------------------------------------------------------------------------
 
-    
+def add_driver():
+    name = input("Enter driver's name: ")
+    license = input("Enter driver's license number: ")
 
-    print(f"Fahrer {name} wurde erfolgreich hinzugefügt.")
+    driver_data = {"name": name, "license": license}
+    drivers.append(driver_data)
 
-# Funktion zum Bearbeiten eines vorhandenen Fahrers
-def bearbeite_fahrer():
-    name = input("Name des zu bearbeitenden Fahrers: ")
+    print(f"Driver {name} added successfully!")
 
-    # Fahrerdaten aus Datei lesen
-    fahrer_daten = lies_fahrer_daten(name)
+def show_drivers():
+    if not drivers:
+        print("No drivers currently registered.")
+        return
 
-    if fahrer_daten:
-        neuer_name = input(f"Neuer Name ({fahrer_daten[0]}): ")
-        neue_fuehrerscheinnummer = input(f"Neue Führerscheinnumer ({fahrer_daten[1]}): ")
-        neue_firma = input(f"Neue Firma ({fahrer_daten[2]}): ")
+    print("-" * 30)
+    print("Registered Drivers:")
+    for driver in drivers:
+        print(f"Name: {driver['name']}")
+        print(f"License: {driver['license']}")
+        print("-" * 30)
 
-        # Fahrerdaten aktualisieren
-        aktualisiere_fahrer_daten(name, neuer_name, neue_fuehrerscheinnummer, neue_firma)
+while True:
+    print("\nTruck Driver Management")
+    print("-----------------------")
+    print("1. Add Driver")
+    print("2. Show Drivers")
+    print("3. Exit")
 
-        print(f"Fahrerdaten von {name} wurden aktualisiert.")
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        add_driver()
+    elif choice == "2":
+        show_drivers()
+    elif choice == "3":
+        print("Exiting program...")
+        break
     else:
-        print(f"Fahrer {name} konnte nicht gefunden werden.")
-
-# Funktion zum Löschen eines Fahrers
+        print("Invalid choice. Please try again.")
 
 
 
