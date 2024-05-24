@@ -41,48 +41,51 @@ def main():
             print("Ungültige Eingabe. Bitte versuche es 
 
 
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
-def add_driver():
-    name = input("Enter driver's name: ")
-    license = input("Enter driver's license number: ")
 
-    driver_data = {"name": name, "license": license}
-    drivers.append(driver_data)
 
-    print(f"Driver {name} added successfully!")
 
-def show_drivers():
-    if not drivers:
-        print("No drivers currently registered.")
-        return
+fahrer = []  # Leere Liste 
 
+def fahrer_hinzufügen():
+  "Fügt einen neuen Fahrer hinzu."
+  name = input("Geben Sie den Namen des Fahrers ein: ")
+  führerscheinnummer = input("Geben Sie die Führerscheinnumer des Fahrers ein: ")
+
+  fahrerdaten = {"name": name, "führerscheinnummer": führerscheinnummer}
+  fahrer.append(fahrerdaten)
+
+  print(f"Fahrer {name} wurde erfolgreich hinzugefügt!")
+
+def fahrer_anzeigen():
+  "Zeigt alle registrierten Fahrer an."
+  if not fahrer:
+    print("Es sind derzeit keine Fahrer registriert.")
+    return
+
+  print("-" * 30)
+  print("Registrierte Fahrer:")
+  for fahrer in fahrer:
+    print(f"Name: {fahrer['name']}")
+    print(f"Führerscheinnumer: {fahrer['führerscheinnummer']}")
     print("-" * 30)
-    print("Registered Drivers:")
-    for driver in drivers:
-        print(f"Name: {driver['name']}")
-        print(f"License: {driver['license']}")
-        print("-" * 30)
 
 while True:
-    print("\nTruck Driver Management")
-    print("-----------------------")
-    print("1. Add Driver")
-    print("2. Show Drivers")
-    print("3. Exit")
+  print("nLkw-Fahrerverwaltung")
+  print("----------------------")
+  print("1. Fahrer hinzufügen")
+  print("2. Fahrer anzeigen")
+  print("3. Beenden")
 
-    choice = input("Enter your choice: ")
+  auswahl = input("Geben Sie Ihre Wahl ein: ")
 
-    if choice == "1":
-        add_driver()
-    elif choice == "2":
-        show_drivers()
-    elif choice == "3":
-        print("Exiting program...")
-        break
-    else:
-        print("Invalid choice. Please try again.")
-
-
-
-
+  if auswahl == "1":
+    fahrer_hinzufügen()
+  elif auswahl == "2":
+    fahrer_anzeigen()
+  elif auswahl == "3":
+    print("Programm wird beendet...")
+    break
+  else:
+    print("Ungültige Eingabe. Bitte versuchen Sie es erneut.")
